@@ -18,7 +18,7 @@
     background-color: rgb(0, 0, 0);
     background-image: url('/src/assets/img/invert.JPG');
     background-repeat: no-repeat;
-    animation: moveBackground 60s linear infinite;
+    animation: moveBackground 60s linear infinite,cambiarColor 1s linear infinite;
 }
 
 #trabajos-btn:active {
@@ -37,3 +37,5 @@
         background-position: 100% 0;
     }
 }
+
+

@@ -26,15 +26,26 @@ body {
     background-color: rgb(255, 255, 255);
     transition: 0.4s;
     background-image: url('./assets/img/white.JPG');
+    
 }
 
 
 .bg2{
     background-color: #1f1f1f;
     transition: all 0.4s;
-    background-image: url('./assets/img/textureBg.JPG');
-    
+    background-image: url('./assets/img/fire.JPG');
+    animation: moveBackground2 2s linear infinite;
     /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'%3E%3Cg fill='%23c4b4a0' fill-opacity='0.10'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");*/
+}
+
+@keyframes moveBackground2{
+    0% {
+        background-position: 0 0%;
+    }
+    100% {
+        background-position: 0 100%;
+        background-position-y: -4800px
+    }
 }
 
 .presentation {
@@ -76,7 +87,6 @@ body {
 .more {
     display: flex;
     align-items: center;
-    height: 100vh;
     justify-content: center;
 }
 

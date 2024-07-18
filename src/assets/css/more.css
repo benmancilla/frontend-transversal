@@ -7,8 +7,7 @@
     height: fit-content;
     padding-bottom: 7vh;
     padding-top: 10vh;
-    padding-bottom: 15vh;
-    
+    padding-bottom: 20vh;
 }
 
 @keyframes brillar {
@@ -34,14 +33,14 @@
 
 #more-bg1 {
     opacity: 0;
-    padding-top: 20vh;
+    padding-top: 10vh;
     transition: all 0.5s ;
     padding-bottom: 0vh
 }
 
 #more-bg2 {
     opacity: 1;
-    padding-top: 10vh;
+    padding-top: 4vh;
     transition: all 0.5s ;
 }
 
@@ -78,7 +77,7 @@
 .info-more-bg2 {
     text-align: center;
     margin: 5vh 25vw;
-    margin-bottom: 10vh;
+    margin-bottom: 9vh;
     color: rgb(255, 255, 255);
 }
 
@@ -143,14 +142,12 @@
 
 .card {
     font-family: "Major Mono Display", monospace;
-
+    background: none;
     font-style: normal;
     border: none;
-    background-image: url('/src/assets/img/invert.JPG');
+    color: #fff;
     background-repeat: no-repeat;
     background-position: center;
-    animation: moveBackground 60s linear infinite;
-    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
     height: fit-content;
 }
 
@@ -164,13 +161,13 @@
 }
 
 .card-body {
-    height: 7vh;
+    height: fit-content;
     transition: height 0.4s;
 }
 
 
 .card-body h5{
-    color: #70006e;
+    color: #fff;
     font-weight: 600;
     font-size: 13px;
 }
@@ -188,14 +185,45 @@
 .col {
     transition: all 0.2s;
     text-align: center;
-    margin-right: 1vh;
-    margin-left: 1vh;
+    margin-right: 0vh;
+    margin-left: 0vh;
     height: fit-content;
-    width: 20vw;
+    width: 22vw;
     overflow: hidden;
     transition: all 0.2s;
     padding-bottom: 2vh;
     
+}
+
+.card button{
+    font-family: "Major Mono Display", monospace;
+    font-style: normal;
+    font-weight: 600;
+    border: none;
+    width: fit-content;
+    align-self: center;
+    padding: 1vh 2vh;
+    transition: all 0.2s;
+    background-image: url('/src/assets/img/textureBg.JPG');
+    filter: saturate(0) ;
+    color: rgb(255, 255, 255);
+}
+
+.card button:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    background-image: url('/src/assets/img/invert.JPG');
+    background-repeat: no-repeat;
+    filter: saturate(1);
+    animation: moveBackground 60s linear infinite, cambiarColor 1s linear infinite;;
+}
+
+.card button:active{
+        color: aliceblue;
+        background-color: rgb(0, 0, 0);
+        border-color: rgb(0, 0, 0);
+        margin: 0.5vh 1vh;
+
 }
 
 @media screen  and (max-width: 1025px){
@@ -290,6 +318,10 @@
         animation: brillar 3s infinite; 
     }
 
+    #add-cart {
+        font-size: 15px;
+    }
+
     .carousel-btn {
         height: 10vh;
         width: 6vw;
@@ -326,7 +358,7 @@
     .info-text-more h2 {
         width: 100%;
         font-size: 17px;
-        text-align: left;
+        text-align: center;
     }
 
     #card-carousel {
@@ -341,6 +373,7 @@
         height: fit-content;
         align-self: center;
     }
+    
 
     .card-body {
         height: fit-content;

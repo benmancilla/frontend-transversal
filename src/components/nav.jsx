@@ -58,10 +58,13 @@ const CreateNavBar = () => {
                                 <a className="nav-link" href="#">inicio</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#more-bg1">obras</a>
+                                <a className="nav-link" href="#more-bg1">poleras</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" data-bs-toggle="modal" href="#ContactToggle" id="btn-contact">contacto</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" data-bs-toggle="modal" href="#cartModal" id="btn-cart">carrito</a>
                             </li>
                         </ul>
 

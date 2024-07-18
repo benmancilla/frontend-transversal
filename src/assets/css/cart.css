@@ -1,0 +1,18 @@
+#cartmodal .btn {
+    color:black
+}
+
+#cart-top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#cart-footer{
+    justify-content: space-between;
+}
+
+.cartbtn{
+    font-size: 25px;
+    margin-left: 1vw;
+}
